@@ -8,7 +8,7 @@ export async function ListPosts() {
     
     const posts = await fetcThePosts()
 
-    return posts.slice(0, 5).map(post => (
+    return posts.slice(0, 10).map(post => (
         <div key={post.id}>
             <article>
                 <h2 className="font-bold underline font-sans hover:font-serif"> {post.title} </h2>
