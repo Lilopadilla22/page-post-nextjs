@@ -21,7 +21,7 @@ export function Navbar() {
   return (
     <header>
         <nav>
-        <ul>
+        <ul className="flex flex-row justify-around">
             {sections.map(({label, route}) => (
                 <li key={route}> 
                     <Link href={route}> 
