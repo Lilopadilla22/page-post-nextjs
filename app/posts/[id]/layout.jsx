@@ -11,10 +11,10 @@ export default async function Post({params, children}) {
     const post = await fetchPostId(id)
 
     return (
-        <div>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-            <Link href={`/posts/${id}/comentarios`}>Cometarios</Link>
+        <div className='mx-6 my-3'>
+            <h2 className="font-bold font-sans text-lg max-sm:text-center">{post.title}</h2>
+            <p className="max-sm:text-center font-sans">{post.body}</p>
+            <Link href={`/posts/${id}/comentarios`} className="max-sm:flex items-center justify-center m-6 cursor-pointer font-semibold h-full">Cometarios</Link>
             {children}
         </div>
     )
