@@ -11,7 +11,7 @@ export async function GridPosts() {
     return (
     <div className="flex sm:flex-nowrap -m-10 mt-20 mx-5 flex-wrap hover:text-opacity-25 mb-4">
         { 
-            posts.slice(0, 3).map(post => (
+            posts.slice(16, 19).map(post => (
                 <Link key={post.id} href='/posts/[id]' as={`/posts/${post.id}`} className='my-4 sm:mx-4 '>
                     <div className="sm:h-1/3 content-center mb-4 flex justify-center items-center">
                         <p className="text-center font-bold hover:text-opacity-60">{post.title}</p>
