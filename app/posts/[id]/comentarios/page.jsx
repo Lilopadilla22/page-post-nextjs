@@ -11,10 +11,11 @@ export default async function Post({params}) {
     const comments = await fetcComments(id)
 
     return (
-        <ul>
+        <ul className="mt-6">
             {comments.map(comment => (
-                <li key={comment.id}>
-                    <p className="text-sm bg-gray-100">{comment.body}</p>
+                <li className="text-sm bg-gray-100 mt-2" key={comment.id}>
+                    <h2 className="text-sky-400">{comment.name}</h2>
+                    <p>{comment.body}</p>
                 </li>
             ))}
         </ul>
