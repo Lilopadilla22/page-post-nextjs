@@ -1,8 +1,2 @@
 
-export default function Loading() {
-  return (
-    <div>
-      <p> Cargando comentarios ...</p>
-    </div>
-  )
-}
+export default function Loading() {return <p className="text-sky-200 mt-6 text-center"> Cargando comentarios ...</p>}
