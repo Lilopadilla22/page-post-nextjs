@@ -25,8 +25,8 @@ export function Navbar() {
               <Image 
                 src={'/posti-logo1.png'} 
                 alt="NewPost"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </Link>
           </div>

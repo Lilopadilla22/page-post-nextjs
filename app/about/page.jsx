@@ -15,8 +15,7 @@ export default function AboutPage() {
         </div>
         <h1 className="font-bold text-center "> Te contare un poco sobre mi</h1>
         <p className="mt-6 mx-4 text-justify">
-          Mi nombre es Lilia Padilla Arends. Tengo 27 años y soy Economista egresada de la Universidad del Magdalena.
-          También soy Desarrolladora Full Stack graduada de la escuela Digital House en Argentina. Actualmente, 
+          Mi nombre es Lilia Padilla Arends. Tengo 27 años y soy Desarrolladora Full Stack graduada de la escuela Digital House en Argentina. Actualmente, 
           resido en la ciudad de Santa Marta, Magdalena. 
         </p>
         <p className="my-6 mx-4 text-justify">
