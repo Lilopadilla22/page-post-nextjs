@@ -25,12 +25,12 @@ export function Navbar() {
               <Image 
                 src={'/posti-logo1.png'} 
                 alt="NewPost"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </Link>
           </div>
-          <div className="max-sm:mt-5 max-sm:ml-5">
+          <div className="max-sm:mt-5 max-sm:ml-6">
             <ul className="flex flex-row justify-around">
               {sections.map(({label, route}) => (
                   <li key={route}> 
