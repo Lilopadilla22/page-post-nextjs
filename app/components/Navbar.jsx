@@ -30,7 +30,7 @@ export function Navbar() {
               />
             </Link>
           </div>
-          <div>
+          <div className="max-sm:mt-5 max-sm:ml-5">
             <ul className="flex flex-row justify-around">
               {sections.map(({label, route}) => (
                   <li key={route}> 
@@ -42,7 +42,7 @@ export function Navbar() {
             </ul>
           </div>
           <div>
-            <button className="border-solid border-2 border-sky-500 bg-sky-500 w-32 rounded text-white">
+            <button className="border-solid border-2 border-sky-500 bg-sky-500 w-36 h-12 rounded text-white max-sm:hidden ">
               Get in touch
             </button>
           </div>
