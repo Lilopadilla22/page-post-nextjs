@@ -7,7 +7,7 @@ const sections = [
       route: '/'
     },
     {
-      label: 'Posts',
+      label: 'Post',
       route: '/posts'
     },
     {

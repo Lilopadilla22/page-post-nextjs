@@ -13,7 +13,7 @@ export async function ListPosts() {
         <div className="flex flex-wrap justify-center">
             {
                 posts.slice(0, 10).map(post => (
-                    <div key={post.id} className="border border-white bg-white rounded-lg my-6 mx-10 w-60 h-full  sm:h-[600px] drop-shadow-xl" >
+                    <div key={post.id} className="border border-white bg-white rounded-lg my-6 mx-10 w-60 h-full  sm:h-[600px] drop-shadow-xl hover:bg-slate-200 hover:border-slate-200" >
                     <Link href='/posts/[id]' as={`/posts/${post.id}`} >
                     <div className="sm:h-1/5 content-center m-4 flex justify-center items-center">
                         <Image
