@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const sections = [
@@ -18,16 +19,33 @@ const sections = [
 export function Navbar() {
   return (
     <header>
-        <nav>
-        <ul className="flex flex-row justify-around border-dotted border-2 border-sky-500 m-6 p-2 rounded-md max-sm:m-4">
-            {sections.map(({label, route}) => (
-                <li key={route}> 
-                    <Link href={route} className="hover:underline" > 
-                    {label} 
-                    </Link> 
-                </li>
-            ))}
-        </ul>
+        <nav className="flex flex-wrap sm:flex-nowrap justify-around mt-6 ">
+          <div>
+            <Link href='/'>
+              <Image 
+                src={'/posti-logo1.png'} 
+                alt="NewPost"
+                width={100}
+                height={100}
+              />
+            </Link>
+          </div>
+          <div>
+            <ul className="flex flex-row justify-around">
+              {sections.map(({label, route}) => (
+                  <li key={route}> 
+                      <Link href={route} className="text-sm hover:font-bold mx-6" > 
+                      {label} 
+                      </Link> 
+                  </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <button className="border-solid border-2 border-sky-500 bg-sky-500 w-32 rounded text-white">
+              Get in touch
+            </button>
+          </div>
         </nav>
     </header>
   )
