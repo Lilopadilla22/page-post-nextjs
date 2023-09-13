@@ -30,7 +30,7 @@ export function Navbar() {
               />
             </Link>
           </div>
-          <div className="max-sm:mt-5 max-sm:ml-5">
+          <div className="max-sm:mt-5 max-sm:ml-6">
             <ul className="flex flex-row justify-around">
               {sections.map(({label, route}) => (
                   <li key={route}> 
