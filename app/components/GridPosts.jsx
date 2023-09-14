@@ -10,7 +10,7 @@ export async function GridPosts() {
     const posts = await fetcThePosts()
 
     return (
-    <div className="flex sm:flex-nowrap -m-10 mt-20 mx-5 flex-wrap hover:text-opacity-25">
+    <div className="flex sm:flex-nowrap my-20 mx-5 flex-wrap hover:text-opacity-25">
         { 
             posts.slice(16, 19).map(post => (
                 <Link key={post.id} href='/posts/[id]' as={`/posts/${post.id}`} className='mt-4 sm:mb-50 sm:mx-4 '>
